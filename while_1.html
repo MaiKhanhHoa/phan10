@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="hienso"></h1>
+    <h1 id="tong"></h1>
+</body>
+<script>
+  let num =+prompt("Nhap so")
+  let sum= num
+  document.getElementById('hienso').innerHTML = num + ' '
+  while (num !== -1) {
+    num = +prompt("Nhap so")
+    document.getElementById("hienso").innerHTML += num + ' '
+    sum += num
+  }
+  document.getElementById("tong").innerHTML="Tong: "+sum
+</script>
+</html>
